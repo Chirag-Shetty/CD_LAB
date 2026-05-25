@@ -34,7 +34,7 @@ void print(){
 int j=0;
 	printf("3 address code \n");
 	for(int j=0;j<i;j++){
-	if(strcmp(q[i].op,"=")==0){
+	if(strcmp(q[j].op,"=")==0){
 	printf("%s\t=\t%s\n",q[j].res,q[j].a1);}
 	else{
 	printf("%s\t=\t%s\t%s\t%s\n",q[j].res,q[j].a1,q[j].op,q[j].a2);
