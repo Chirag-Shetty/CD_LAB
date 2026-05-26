@@ -15,13 +15,13 @@
 "=" {return '=';}
 "<" {return '<';}
 ">" {return '>';}
-"+"             { return '+'; }   /* ← ADDED */
-"-"             { return '-'; }   /* ← ADDED */
-"*"             { return '*'; }   /* ← ADDED */
-"/"             { return '/'; }   /* ← ADDED */
+"+"             { return '+'; }  
+"-"             { return '-'; }   
+"*"             { return '*'; }   
+"/"             { return '/'; }   
 [0-9]+          { return NUM; }
 [A-Za-z][A-Za-z0-9]* { return ID; }
 [ \t\n]+        ;
 .               { printf("unknown char: %s\n", yytext); }
 %%
-int yywrap() { return 1; }   /* ← FIXED: was missing closing brace */
+int yywrap() { return 1; }   
